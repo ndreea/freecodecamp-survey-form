@@ -1,5 +1,5 @@
 # Formulario de Contacto de Escuela 📚
-Este repositorio contiene un formulario de contacto para una escuela, desarrollado como proyecto final del curso de Web Responsive Design de freeCodeCamp. La estructura y el diseño se han realizado utilizando solo HTML y CSS.
+Este repositorio contiene un formulario de contacto para una escuela, desarrollado como proyecto final del curso de Responsive Web Design de freeCodeCamp. La estructura y el diseño se han realizado utilizando solo HTML y CSS.
 
 ## Descripción
 El formulario permite a los usuarios ingresar su nombre, correo electrónico, edad, responder a unas sencillas preguntas e introducir un mensaje. La interfaz se ha diseñado de manera sencilla y profesional para que pueda integrarse fácilmente en sitios web educativos.
