@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Escuela</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!--ENCABEZADO-->
+        <header>
+            <h1 id="title">Formulario de Escuela</h1>
+            <p id="description">Muchas gracias por tu tiempo en hacernos mejorar!</p>
+        </header>
+
+        <!--FORMULARIO-->
+        <form action="https://survey-form.freecodecamp.rocks/" id="survey-form" method="POST">
+            <!--Nombre, email y edad del usuario-->
+            <fieldset>
+                <label for="text" id="name-label">Nombre</label><input type="text" id="text" name="text" placeholder="Introduzca su nombre" required>
+                <label for="email" id="email-label">Email</label><input type="email" id="email" name="email" placeholder="Introduzca su email" required>
+                <label for="number" id="number-label">Edad <span>(opcional)</span></label><input type="number" id="number" name="number" min="18" max="100" placeholder="Edad" required>
+            </fieldset>
+
+            <!--Dropdown puesto actual-->
+            <fieldset>
+                <label for="dropdown">
+                    ¿Cuál es su posición actual?
+                    <select name="dropdown" id="dropdown">
+                        <option value="0">Seleccione una posición</option>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trabajador a tiempo completo</option>
+                        <option value="3">Trabajador a tiempo parcial</option>
+                        <option value="4">Desempleado</option>
+                        <option value="5">Otro</option>
+                        </select>
+                </label>
+            </fieldset>
+            
+            <!--Recomendaciones-->
+            <fieldset>
+                <legend>¿Recomendarías la escuela?</legend>
+                <label for="recommend"><input type="radio" name="recommend" id="recommend" value="Por supuesto" checked>Por supuesto</label>
+                <label for="recommend"><input type="radio" name="recommend" id="recommend" value="Tal vez">Tal vez</label>
+                <label for="recommend"><input type="radio" name="recommend" id="recommend" value="No estoy seguro/a">No estoy seguro/a</label>
+            </fieldset>
+
+            <!--Dropdown favoritos-->
+            <fieldset>
+                <label for="dropdown">
+                    ¿Qué es lo que más te ha gustado de la escuela?
+                    <select name="dropdown" id="dropdown">
+                        <option value="0">Seleccione una opción</option>
+                        <option value="1">Cursos / Másters</option>
+                        <option value="2">Campus online</option>
+                        <option value="3">Comunidad</option>
+                        <option value="4">El centro</option>
+                        <option value="5">Los docentes</option>
+                        <option value="6">Nada</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <!--Checkbox-->
+            <fieldset>
+                <legend>¿En qué podríamos mejorar? <span>(Selección múltiple)</span></legend>
+                <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" value="front-end projects">Metodología</label>
+                <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" value="back-end projects">Entrega de los proyectos</label>
+                <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" value="challenges">Más ejercicios prácticos</label>
+                <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" value="open source community">Organización</label>
+                <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" value="gitter help rooms">Centro de ayuda</label>
+                <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" value="videos">Plataforma de empleo</label>
+            </fieldset>
+        
+            <!--Cuadro de texto-->
+            <fieldset>
+                <label for="bio">¿Algún comentario o sugerencia que nos quieras hacer?<textarea name="bio" id="bio" rows="5" cols="30" placeholder=" Introduzca su comentario o sugerencia aquí..."></textarea></label>
+            </fieldset>
+            
+            <!--Botón enviar-->
+            <input type="submit" id="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
